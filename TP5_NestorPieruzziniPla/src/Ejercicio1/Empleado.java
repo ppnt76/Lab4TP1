@@ -3,7 +3,7 @@ package Ejercicio1;
 public class Empleado 
 {
 	//atributos
- private int id;
+ private final int id;
  private String nombre;
  private int edad;
  private static int cont=1000;
@@ -32,5 +32,13 @@ public String toString()
 {
 	return "Id Empleado=" + id + ", Nombre=" + nombre + ", Edad=" + edad;
 }
+//getters y setters
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+
  
 }
